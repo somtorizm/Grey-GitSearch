@@ -28,6 +28,12 @@
 		F523A5C82C388F95004ED1AD /* RepositoryViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F523A5C72C388F95004ED1AD /* RepositoryViewModelTests.swift */; };
 		F523A5CA2C388FF1004ED1AD /* MockGitHubRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F523A5C92C388FF1004ED1AD /* MockGitHubRepository.swift */; };
 		F523A5CC2C389290004ED1AD /* UserViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F523A5CB2C389290004ED1AD /* UserViewModelTests.swift */; };
+		F523A5CF2C389518004ED1AD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F523A5CE2C389518004ED1AD /* HomeView.swift */; };
+		F523A5D12C38954A004ED1AD /* RepositoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F523A5D02C38954A004ED1AD /* RepositoryListView.swift */; };
+		F523A5D32C38958D004ED1AD /* UserSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F523A5D22C38958D004ED1AD /* UserSearchView.swift */; };
+		F523A5D52C3895BC004ED1AD /* UserDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F523A5D42C3895BC004ED1AD /* UserDetailsView.swift */; };
+		F523A5D72C389869004ED1AD /* SearchRepositoriesUseCaseLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F523A5D62C389869004ED1AD /* SearchRepositoriesUseCaseLocal.swift */; };
+		F523A5D92C389983004ED1AD /* GetUserDetailsUseCaseLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F523A5D82C389983004ED1AD /* GetUserDetailsUseCaseLocal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +78,12 @@
 		F523A5C72C388F95004ED1AD /* RepositoryViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryViewModelTests.swift; sourceTree = "<group>"; };
 		F523A5C92C388FF1004ED1AD /* MockGitHubRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockGitHubRepository.swift; sourceTree = "<group>"; };
 		F523A5CB2C389290004ED1AD /* UserViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModelTests.swift; sourceTree = "<group>"; };
+		F523A5CE2C389518004ED1AD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F523A5D02C38954A004ED1AD /* RepositoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListView.swift; sourceTree = "<group>"; };
+		F523A5D22C38958D004ED1AD /* UserSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSearchView.swift; sourceTree = "<group>"; };
+		F523A5D42C3895BC004ED1AD /* UserDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsView.swift; sourceTree = "<group>"; };
+		F523A5D62C389869004ED1AD /* SearchRepositoriesUseCaseLocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoriesUseCaseLocal.swift; sourceTree = "<group>"; };
+		F523A5D82C389983004ED1AD /* GetUserDetailsUseCaseLocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserDetailsUseCaseLocal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +134,7 @@
 		F523A57E2C387EB1004ED1AD /* Grey GitSearch */ = {
 			isa = PBXGroup;
 			children = (
+				F523A5CD2C3894F8004ED1AD /* Views */,
 				F523A5C12C388CD7004ED1AD /* Presentation */,
 				F523A5A92C38800C004ED1AD /* Domain */,
 				F523A57F2C387EB1004ED1AD /* Grey_GitSearchApp.swift */,
@@ -185,6 +198,8 @@
 				F523A5B22C3881AD004ED1AD /* GetUserDetailsUseCase.swift */,
 				F523A5B42C3881E8004ED1AD /* SearchRepositoriesUseCaseImpl.swift */,
 				F523A5B62C38820C004ED1AD /* GetUserDetailsUseCaseImpl.swift */,
+				F523A5D62C389869004ED1AD /* SearchRepositoriesUseCaseLocal.swift */,
+				F523A5D82C389983004ED1AD /* GetUserDetailsUseCaseLocal.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -215,6 +230,17 @@
 				F523A5C52C388D3E004ED1AD /* UserViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F523A5CD2C3894F8004ED1AD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F523A5CE2C389518004ED1AD /* HomeView.swift */,
+				F523A5D02C38954A004ED1AD /* RepositoryListView.swift */,
+				F523A5D22C38958D004ED1AD /* UserSearchView.swift */,
+				F523A5D42C3895BC004ED1AD /* UserDetailsView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,17 +376,23 @@
 				F523A5C02C388399004ED1AD /* URLSessionProtocol.swift in Sources */,
 				F523A5C42C388CF5004ED1AD /* RepositoryViewModel.swift in Sources */,
 				F523A5AE2C388077004ED1AD /* User.swift in Sources */,
+				F523A5CF2C389518004ED1AD /* HomeView.swift in Sources */,
+				F523A5D52C3895BC004ED1AD /* UserDetailsView.swift in Sources */,
 				F523A5822C387EB1004ED1AD /* ContentView.swift in Sources */,
 				F523A5B72C38820C004ED1AD /* GetUserDetailsUseCaseImpl.swift in Sources */,
 				F523A5C62C388D3E004ED1AD /* UserViewModel.swift in Sources */,
+				F523A5D92C389983004ED1AD /* GetUserDetailsUseCaseLocal.swift in Sources */,
 				F523A5BA2C38824C004ED1AD /* GitHubRepository.swift in Sources */,
 				F523A5802C387EB1004ED1AD /* Grey_GitSearchApp.swift in Sources */,
 				F523A5AC2C388035004ED1AD /* Repository.swift in Sources */,
+				F523A5D12C38954A004ED1AD /* RepositoryListView.swift in Sources */,
 				F523A5BC2C388263004ED1AD /* GitHubRepositoryImpl.swift in Sources */,
 				F523A5B32C3881AD004ED1AD /* GetUserDetailsUseCase.swift in Sources */,
+				F523A5D32C38958D004ED1AD /* UserSearchView.swift in Sources */,
 				F523A5B52C3881E8004ED1AD /* SearchRepositoriesUseCaseImpl.swift in Sources */,
 				F523A5B12C38818D004ED1AD /* SearchRepositoriesUseCase.swift in Sources */,
 				F523A5BE2C3882C3004ED1AD /* GithubResponse.swift in Sources */,
+				F523A5D72C389869004ED1AD /* SearchRepositoriesUseCaseLocal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
